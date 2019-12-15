@@ -1,0 +1,32 @@
+.main-proyects-container {
+    @include containers;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.proyects-navbar-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+// .out {
+//     display: none;
+// }
+.proyects-cards-container {
+    width: calc(386 *3);
+    height: 600px;
+    margin-top: 50px;
+}
+
+.grid-card{
+    display: grid;
+    grid-template: {
+        columns: 386px 386px 386px;
+        rows:300px 300px;
+    }
+}
+
+
+

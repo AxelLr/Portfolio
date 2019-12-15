@@ -1,0 +1,24 @@
+
+ .seccion-title-container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ 
+ .underline {
+    background: var(--blue);
+    width: 75px;
+    height: 5px;
+    }
+
+.seccion-title {
+    font-family: "Nunito" ;
+        margin: 5px; 
+         width: 100%;
+       text-align: center;
+
+       &::after, &::before {
+       content:'-';
+
+       }
+}

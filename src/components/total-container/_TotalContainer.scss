@@ -1,0 +1,48 @@
+@mixin containers {
+    min-height: 100vh;
+    max-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+.total_container {
+@include containers;
+}
+
+.home_container {
+@include containers;
+background: url(../../assets/icons/black-background16.jpg) no-repeat center center fixed;
+background-size: cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+}
+
+.about_container {
+@include containers;
+min-height: 200vh;
+max-height: 200vh;
+background: #1a1c1c;
+}
+
+.proyects-container {
+@include containers;
+background: #1a1c1c;
+min-height: 120vh;
+max-height: 120vh;
+}
+
+.contact-container {
+@include containers;
+background: #2e4d70;
+min-height: 85vh;
+max-height: 85vh;
+}
+
+.footer-container {
+@include containers; 
+min-height: 15vh;
+max-height: 15vh;
+background: black;
+}

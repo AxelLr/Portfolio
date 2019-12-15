@@ -1,0 +1,186 @@
+.navbar-toggle {
+    display: none;
+}
+.navbar_container {
+right: 0;
+width: 80px;
+height: 100vh;
+position: fixed;
+z-index: 1;
+margin: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-end;
+ul{
+width: 100%;
+display: flex;
+flex-direction: column; 
+justify-content: center;
+padding: 0;
+height: 50vh;
+li{
+margin-left: 5px;
+width: 80%;
+height: 40px;
+list-style: none;
+display: flex;
+flex-direction: row;
+justify-content: center;
+&:hover i {
+font-size: 16px;
+color: #759BC7;
+}
+} 
+a{
+text-decoration: none;
+text-align: center;
+margin:0;
+transition: 0.33s;
+cursor: pointer;
+i{
+ transition: 0.33s;
+}
+}
+}
+}
+/************************************ SCROLL SPY ****************************/
+.home-link {
+    a{
+        i{
+            color: var(--white2);
+            font-size: 10px;
+        }
+    }
+    &:hover {
+        a{
+            i::before{
+                content: 'Home';
+                font-family: 'Open Sans';
+            }
+        }
+    }
+   }
+.aboutme-link {
+    a{
+        i{
+            color: var(--white2);
+            font-size:10px;
+        }
+    }
+ &:hover {
+     a{
+         i::before{
+             content: 'Sobre Mi';
+             font-family: 'Open Sans';
+             white-space: nowrap;
+         }
+     }
+ }
+}
+.proyects-link {
+    a{
+        i{
+            color: var(--white2);
+            font-size: 10px;
+        }
+    }
+    &:hover {
+        a{
+            i::before{
+                content: 'Proyectos';
+                font-family: 'Open Sans';
+            }
+        }
+    }
+}
+   .contact-link {
+    a{
+        i{
+            color: var(--white2);
+            font-size: 10px;
+        }
+    }
+    &:hover {
+        a{
+            i::before{
+                content: 'Contacto';
+                font-family: 'Open Sans';
+            }
+        }
+    }
+}
+/*********************** LI ICONS ANIMATIONS **********************/
+
+.home-anim {
+    transform: translateY(-50vh);
+    animation: navbar-icons 1s .8s forwards;
+}
+.about-anim {
+    transform: translateY(-50vh); 
+    animation: navbar-icons 1.2s .6s forwards;  
+}
+.proyects-anim {
+    transform: translateY(-50vh); 
+    animation: navbar-icons 1.4s .4s forwards;
+
+}
+.contact-anim {
+    transform: translateY(-50vh);
+    animation: navbar-icons 1.6s .2s forwards;
+}
+
+/**************************** SCROLL SHOW CLASSES **************************/  
+.no-navbar {
+transition: 0.4s;
+background: transparent;
+visibility: hidden;  
+opacity: 0;
+}
+.yes-navbar{
+opacity: 1;
+transition: 4s;
+visibility: visible;
+}
+
+
+/**************************** SCROLL SPY CLASSES **************************/ 
+.spy-on {
+    .ibn{
+        font-size: 16px;
+        color: #759BC7;
+        
+    }
+}
+
+@media screen and (max-width: 812px) {
+
+.lale {
+background: blue;
+ transition: 0.4s;
+}
+
+.lolo{
+visibility: hidden;
+opacity: 0;
+transition: .4s;
+}
+    
+    .navbar-toggle{
+        display: block;
+        background: transparent;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        i{
+            background: transparent;
+            opacity: 1;
+        }
+    }
+    .button-on {
+       animation: menu-opacity 1s;
+    }
+    .button-off {
+     animation: menu2-opacity 1s;
+    }
+}

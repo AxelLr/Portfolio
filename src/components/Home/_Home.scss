@@ -1,0 +1,197 @@
+.main_home_container{ 
+    box-sizing: border-box;
+    margin: 0px 70px 0px 70px;
+    min-height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    h1{
+    color: var(--white2);
+    padding: 0;       
+        span {
+        color: var(--blue);
+        font-weight: bold;
+        }
+    }
+}
+
+.name-title{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 3.7em;
+    opacity: 0;
+    margin: 80px 5px 5px 9px;
+    letter-spacing: 8px;
+    transform: translateY(-20vh);
+    animation: title 1s ease-out 1 normal forwards, title-opacity 1s ease-in 1 normal forwards;
+}
+
+.sub-title{
+    width: 0%;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 1.7em;
+    margin: 0px 0px 0px 8px;
+    color: var(--white2);
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 3px solid var(--white2); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    animation: typing 2.5s steps(30, end) 0.5s forwards, blink-caret 1s step-end 2.8s infinite;
+    white-space: nowrap;
+}
+
+.separator { 
+    margin-top: 30px;
+    margin-left: 10px;
+    background: #EFEEEE;
+    height: 1px;
+    border: none;
+    animation: fadeInSeparatorA 1.5s ease-in .5s 1 normal forwards;
+}
+
+.separator2 { 
+    margin-top: 5px;
+    margin-left: 10px; 
+    margin-bottom: 50px;
+    color: red; 
+    background: #EFEEEE;
+    height: 1px;
+    border: none;
+    animation: fadeInSeparatorB 1.5s ease-in .8s 1 normal forwards;
+}
+
+.home-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    max-height: 55px;
+    min-height:55px;
+
+    a{
+        box-sizing: border-box;
+        padding: 0;
+        text-decoration: none;        
+        transition: 0.4s;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: rgb(176,0,2);
+        background: linear-gradient(90deg, rgba(176,0,2,1) 6%, rgba(180,23,23,0.7595413165266106) 89%);
+        margin-right: 10px;
+        margin-left: 10px;
+        min-width: 180px;
+        max-width: 180px;
+        cursor: pointer;
+
+        i{
+         color: var(--white1);
+         padding: 0;
+         margin: 2.5px 5px 0px 5px;
+         transition: 0.4s;
+         align-items: center;
+        }
+        
+        h1 {
+            transition: 0.4s;
+            padding: 0;
+            font-family: "Open Sans";
+            font-size: 1em;
+            color: #EFEEEE;
+            margin: 2px;
+            min-width: 130px;
+            max-width: 130px;
+            text-align: center;
+        }      
+    }
+    a:hover {
+        border: 2px var(--white1) solid ;
+        background: transparent;
+        border-radius: 10px;
+        h1 {
+            color: var(--white1);
+            padding: 0;
+        }
+        i {
+            color: var(--white1);
+            padding: 0;
+        }
+    }
+}
+
+.arrow-container {
+    margin: 120px 0px 30px 0px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+
+    i{ 
+        border-radius: 50%;
+        padding: 5px;
+        background: var(--white2);
+        font-size: 40px;
+        color: var(--black2);
+        transition: 0.4s;
+        opacity:0 ;
+    }
+    .arrow-animation {
+        animation: arrowOpacity 1s ease-in 3s 1 normal forwards,
+                   arrowMove 2s infinite ease-out 3s;
+
+                   &:hover{
+                    -webkit-animation-play-state:paused;
+                    -moz-animation-play-state:paused;
+                    -o-animation-play-state:paused;
+                    animation-play-state:paused;
+                    cursor: pointer;
+                    font-size: 48px;
+                  }
+    }
+}
+
+.lala {
+width: 100%;
+margin: 20px 0px 0px 0px;
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+height: 100px;
+
+}
+
+.iconA {
+   opacity: 0;  
+   animation: HomeIcons 1s ease 3s 1 normal forwards;
+    img {
+     transition: .4s;
+    }
+   &:hover {
+     img {
+         width: 43px;
+         height: 43px;
+     }
+   }
+}
+
+.iconB {
+    opacity: 0; 
+    animation: HomeIcons 1s ease 2.5s 1 normal forwards;
+    img {
+        transition: .4s;
+       }
+      &:hover {
+        img {
+            width: 33px;
+            height: 33px;
+        }
+      }
+ }
+ 

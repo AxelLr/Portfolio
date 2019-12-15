@@ -1,0 +1,91 @@
+@keyframes arrowMove {
+    0% {transform: translateY(0) }
+    15%  { transform: translateY(22px) }
+    30% { transform: translateY(5px) }
+    45% { transform: translateY(16px) }
+    70% { transform: translateY(0px) }
+   100% { transform: translateY(-5px) }
+   }
+   
+   @keyframes arrowOpacity {
+   from  {opacity: 0 }
+   to    {opacity: .8 }
+   }
+
+@keyframes fadeInSeparatorA {
+    from { width:  0;}
+    to   { width: 42%}
+}
+
+@keyframes fadeInSeparatorB {
+    from { width:  0;}
+    to   { width: 35%}
+}
+
+@keyframes HomeIcons {
+    from {width: 0;
+         opacity: 0;}
+    to  { width: 55px;
+        opacity: 1;
+    }
+}
+
+  /* The typing effect */ 
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--white2) }
+  }
+
+ // animation: name duration timing-function delay iteration-count direction fill-mode;
+
+ /********************************* NAVBAR KEYFRAMES ************************************/
+
+@keyframes menu-opacity {
+  from {opacity: 0;}
+  to   {opacity: 1;}
+  
+}
+
+@keyframes menu2-opacity {
+  from {opacity: 0;}
+  to   {opacity: 1;}
+}
+
+@keyframes navbar-deploy {
+  from {height: 0;}
+  to   {height: 100vh;}
+}
+
+@keyframes navbar-icons {
+  to   {transform: translateY(0vh)}
+}
+
+ /********************************* TITLE KEYFRAMES ************************************/
+@keyframes title {
+  to   {transform: translateY(0vh)}
+}
+
+@keyframes title-opacity {
+  to   {opacity: 1}
+}
+
+/******************************* PROYECT CARD ANIMATIONS ******************************/
+
+@keyframes CardTextInTop {
+  to {transform:  translateY(100px);}
+}
+@keyframes CardTextOutTop {
+  to {opacity: 0; 
+    transform:  translateY(-100px);}
+}
+
+@keyframes CardTextInBot {
+  to { opacity: 1;
+    transform:  translateY(-100px);}
+}
