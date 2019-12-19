@@ -1,10 +1,8 @@
-*::before, *::after {
-    box-sizing: border-box;
-}
 .card-container {
 box-sizing: border-box;
 width: 386px;
 height: 300px;
+margin: 1px;
                                                       
     img {
         margin: 0px;
@@ -64,10 +62,16 @@ height: 300px;
                 transform: translateY(0px);
             }
         }
-
-
 }
  
+@media screen and (max-width: 420px) {
 
+    .card-container {
+        box-sizing: border-box;
+        width: 345px;
+        height: 300px;
+    }
+
+}
 
  

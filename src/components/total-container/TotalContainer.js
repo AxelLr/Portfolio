@@ -5,11 +5,15 @@ import { AboutMe } from '../AboutMe/Aboutme';
 import { Proyects } from  '../Proyects/Proyects';
 import { Contact } from '../Contact/Contact';
 import { Footer } from '../footer/Footer';
-import { Triangle } from './triangle/Triangle';
+import Bounce from 'react-reveal/Bounce';
 
-export const TotalContainer = () => (
+
+const TotalContainer = () => {
+
+    return(
 
 <div className="total_container">
+
 
     <section className="home_container "  id="home-container"> 
 
@@ -20,12 +24,7 @@ export const TotalContainer = () => (
 
     <section className="about_container " id="aboutme-container" >
 
-        <AboutMe iconsize={"40px"} />
-
-        < Triangle />
-        
-        
-      
+        <AboutMe iconsize={"40px"} />      
     </section>
 
     <section className="proyects-container " id="proyects-container">
@@ -43,10 +42,14 @@ export const TotalContainer = () => (
     </section>
 
     <section className="footer-container" id="footer-container">
-
+        
+    <Bounce bottom>
     < Footer />
+    </Bounce>
 
     </section>
 
 </div>
-) 
+) }
+
+export default TotalContainer;

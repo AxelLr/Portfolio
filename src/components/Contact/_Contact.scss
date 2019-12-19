@@ -1,79 +1,66 @@
 .main-contact-container {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+.info-contact-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-}
-.contact-title {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-}
-.form {
-    width: 50%;
-    margin: 20px;
-    flex-wrap: wrap;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-     label {
-         min-width: 330px;
-         min-height: 70px;
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         margin: 25px;
-
-         input{
-             font-family: "Lato";
-             background: transparent;
-             border: none;
-             font-size: 20px;
-             border-bottom: 2px solid black;
-         }
-
-         textarea {
-             font-size: 20px;
-             font-family: "Montserrat";
-             background: transparent;
-             height: 200px;
-             resize: none;
-             border: none;
-             border-bottom: 2px solid black;
-         }
-     }
-}
-
-.textarea-container{
-    background: red;
-}
-.form-button-container {
-    button {
-        font-size: "Lato";
-        border: none;
-        border-radius: 30%;
-        background: black;
+    justify-content: space-around;
+    margin: 0px 0px 60px 0px;
+    height: 35vh;
+    h3{
+        text-align: center;
         color: var(--white2);
-
-        &:disabled {
-            background: red;
-        }
+        font-family: "Nunito";
     }
 }
 
-.error-class {
-    border: 1px solid red;
-    display: inline-block;
-    transition: 0.3s;
+.phone-number {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 250px;
+        margin: 10px;
+    }
+
+    i {
+        margin: 0;
+        font-size: 18px;
+        color: var(--white2);
+        margin-right: 15px;
+    }
 }
-.error-class-text{
-    font-size: 15px;
-    font-family: "Lato";
-    color: red;
-    display: inline-block;
-    transition: 0.3;
+
+.contacticons-container {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+        i{  
+            margin: 10px;
+            font-size: 50px;
+            color: white;
+    }
+
+}
+
+@media screen and (max-width: 418px) {
+
+    .info-contact-container {
+        margin: 60px 0px 100px 0px;
+    }
+
 }

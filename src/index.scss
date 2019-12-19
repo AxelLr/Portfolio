@@ -10,12 +10,11 @@
 @import './components/AboutMe/Grill/grill';
 @import './components/AboutMe/Grill/GrillComp/GrillComp';
 @import './components/footer/Footer';
-@import './components/total-container/triangle/Triangle';
+
 
 * {
     box-sizing: border-box;
     --red: #B00002;
-    --white1: #ffffff;
     --white2: #f5f5f5;
     --green: #017374;
     --white3: #f5f5dc;
@@ -27,11 +26,25 @@
     --blue: #759bc7;
 }
 
+html {
+    height: 100%;
+}
 body {
-height: 100%;
+background: black;
+min-height: -webkit-fill-available;
 margin: 0;  
 padding: 0;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
-background: red;
+}
+
+.lazy-loading {
+background: #0D122A;
+height: 100vh;
+display: flex;
+
+    span {
+        margin: auto;
+    }
+
 }

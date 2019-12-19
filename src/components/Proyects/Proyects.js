@@ -19,10 +19,11 @@ export const Proyects = () => {
                     />
 
                     <ProyectCard imagen={require('../../assets/icons/linkedin4.png')} alt="test" />
-                    <ProyectCard imagen={require('../../assets/icons/linkedin3.png')} alt="test" /> 
-                    <ProyectCard imagen={require('../../assets/icons/react2.png')} alt="test"/>
-                    <ProyectCard imagen={require('../../assets/icons/black-background16.jpg')} alt="test"/>
-                    <ProyectCard  imagen={require('../../assets/icons/black-background16.jpg')} alt="test" />
+                    <ProyectCard imagen={require('../../assets/icons/linkedin3.png')} alt="test" />
+                    <ProyectCard imagen={require('../../assets/icons/linkedin3.png')} alt="test" />
+                    <ProyectCard imagen={require('../../assets/icons/linkedin3.png')} alt="test" />
+                    <ProyectCard imagen={require('../../assets/icons/linkedin3.png')} alt="test" />
+                     
                 </div>    
             </div>
         </div>    

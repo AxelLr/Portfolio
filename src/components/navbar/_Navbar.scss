@@ -11,7 +11,7 @@ margin: 0;
 display: flex;
 flex-direction: column;
 justify-content: center;
-align-items: flex-end;
+align-items: center;
 ul{
 width: 100%;
 display: flex;
@@ -43,6 +43,14 @@ i{
 }
 }
 }
+}
+.navbar-toggle {
+    i{
+        color: #759BC7;
+        font-size: 40px;
+        margin: 0;
+        transform: translateY(-75px)
+    }
 }
 /************************************ SCROLL SPY ****************************/
 .home-link {
@@ -143,20 +151,17 @@ transition: 4s;
 visibility: visible;
 }
 
-
 /**************************** SCROLL SPY CLASSES **************************/ 
 .spy-on {
     .ibn{
         font-size: 16px;
-        color: #759BC7;
-        
+        color: #759BC7;  
     }
 }
 
-@media screen and (max-width: 812px) {
+@media screen and (max-width: 500px) {
 
 .lale {
-background: blue;
  transition: 0.4s;
 }
 

@@ -3,20 +3,19 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background: #181818;
-    height: 15vh;
+    background: black;
 }
 
 .arrow-footer-container {
     height: 40px;
 
     i{  
-        transform: translateY(-35px);
+        transform: translateY(-25px);
         border-radius: 50%;
         padding: 12px;
-        background: #61DBFB;
-        font-size: 40px;
-        color: var(--black2);
+        background: #046b87;
+        font-size: 30px;
+        color: var(--white2);
         transition: 0.4s;
         &:hover {
             cursor: pointer;
@@ -31,11 +30,9 @@
     justify-content: center;
     align-items: center;
     margin: 0;
-    height: 200px;
 
     h1{
         margin: 2px;
- 
         font-size: 15px;
         font-family: "Lato";
         font-weight: 300;

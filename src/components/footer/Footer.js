@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, animateScroll as scroll} from "react-scroll";
+import { Link} from "react-scroll";
 
 export const Footer = () => (
 
@@ -17,7 +17,7 @@ export const Footer = () => (
         </div>
     
         <div className="footer-text">
-            <h1>Made with React <span> hooks </span> </h1>
+            <h1>Made with React </h1>
              <h1> ©2019 Axel León. All Rights reserved</h1>
              
         </div>

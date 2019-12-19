@@ -1,58 +1,75 @@
 import React from 'react';
-import linkedin from '../../assets/icons/linkedin4.png';
-import github from '../../assets/icons/github3.png';
-import { Link, animateScroll as scroll} from "react-scroll";
+import { Link } from "react-scroll";
+import Button from '@material-ui/core/Button'
+import Fade from 'react-reveal/Fade'
 
+// #196CD7
 export const Home = () => {
 
     return (
+
     <div className="main_home_container">
 
-        <div className="lala">  
+        <div className="home-links-container">  
        
-        <a href="lala " className="iconA"> <img src={github} height="40px" width="40px" alt="github" /> </a> 
-        <a href="lala " className="iconB"> <img src={linkedin} height="30px" width="30px" alt="linkedin" /> </a> 
-        
+        <a className="iconA" href="https://www.linkedin.com/in/axelleonr/"> <i className="fab fa-linkedin"></i>        </a>
+        <a className="iconB" href="https://github.com/AxelLr"> <i className="fab fa-github"></i>                       </a>
+            
         </div>
         
         <h1 className="name-title">Axel León</h1> 
 
         <div >
-        <h1 className="sub-title"> Full-stack <span> Developer </span></h1>
+        <h1 className="sub-title"> Full-stack Developer </h1>
         </div>
-    
-        <hr className="separator" /> <hr className="separator2" />
+
+        <div className="separator-container"> <hr className="separator" /> <hr className="separator2" /> </div>
     
 
         <div className="home-button-container">  
-        <Link
-    to="proyects-container"
-    spy={true}
-    smooth={true}
-    offset={0}
-    duration= {1200}
-> <h1> Explorar proyectos </h1> <i className="fas fa-angle-right"></i>  </Link>
-            
-<Link
-    to="contact-container"
-    spy={true}
-    smooth={true}
-    offset={0}
-    duration= {1200}
->       <h1> Contactame </h1> <i className="fas fa-circle-notch"></i>  </Link> 
-        </div>
-    
-         <div className="arrow-container">
-           
-         <Link
-    to="aboutme-container"
-    spy={true}
-    smooth={true}
-    offset={0}
-    duration= {1200}
-> <i className="fas fa-chevron-down arrow-animation"></i>  </Link>
-           
-         </div>
+        <Fade bottom cascade>
+            <Link
+            to="proyects-container"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration= {1200}
+            >  <Button
+            type="link"
+            variant="contained"
+            color="primary"
+            style={{margin: 0}}
+            > Explorar Proyectos <i className="fas fa-angle-right"></i> 
+            </Button> 
+            </Link>
+                    
+            <Link
+                to="contact-container"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration= {1200}
+            >  <Button
+            type="link"
+            variant="contained"
+            color="primary"
+            style={{marginLeft: '15px'}}
+            > Contactame <i className="fas fa-circle"></i> 
+            </Button>
+            </Link> 
+        </Fade>    
+            </div>
+        
+            <div className="arrow-container">
+                    <Link
+                        to="aboutme-container"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration= {1200}
+                    > <i className="fas fa-chevron-down arrow-animation"></i>  
+                    </Link>  
+            </div>
     </div> 
 );
 }

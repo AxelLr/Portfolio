@@ -1,16 +1,14 @@
 // #596060
 .main-about-container {
-    @include containers;
-    min-height: 185vh;
-    max-height: 185vh;
+    // @include containers;
+    // min-height: 185vh;
+    // max-height: 185vh;
+    background: #0D122A;
     font-family: "Nunito";
-    background: var(--darkgray);
-}
-.about-title {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
+
 .about-body{
     margin: 0;
     background: var(--grey);
@@ -21,29 +19,36 @@
     width: 100%;
 }
 .about-body-picture {
+    border-radius: 20px;
+    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-height: 420px;
-    min-height: 420px;
-    width: 100%;
+    width: 90%;
+    margin: 20px auto auto auto;
+    
 }
 .profile-image-container {
 margin: 0px 50px 0px 50px;
-    img {
-        padding: 0;
-        border-radius: 50%;
-    }
+ 
 }
 .profile-paragraph-container {
 width: 35%;
-margin: 0px 40px 0px 100px;
+
     p{
-    color: #d7d4d0;
+    color: var(--white2);
     font-size: 15px;
     font-family: "Montserrat";
     text-align: justify;
+    }
+    
+    h3{
+        color: var(--white2);
+
+        span {
+            color: #4F6B79;
+        }
     }
    
 }
@@ -53,8 +58,8 @@ margin: 0px 40px 0px 100px;
     align-items: flex;
     justify-content: flex-end;
     width: 100%;
-    background: #454545;
-    margin-top: 20px;
+    background: #2E4D70;
+    margin-top: 65px;
 
     h1{
         margin: 5px;
@@ -67,8 +72,9 @@ margin: 0px 40px 0px 100px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 40px;
 
     .front-skills {
         display: flex;
@@ -102,4 +108,24 @@ margin: 0px 40px 0px 100px;
     }
 }
 
+@media screen and (max-width: 1050px) {
 
+    .about-body-picture{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profile-paragraph-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+.about-body-skills {
+    margin-top: 35px;
+}
+.profile-image-container {
+    margin: 20px;
+}
+}

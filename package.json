@@ -2,10 +2,14 @@
   "name": "portfoliov2",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://AxelLr.github.io/Portfolio",
   "dependencies": {
+    "@material-ui/core": "^4.8.0",
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.13.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-reveal": "^1.2.2",
     "react-scripts": "3.2.0",
     "react-scroll": "^1.7.14"
   },
@@ -13,7 +17,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

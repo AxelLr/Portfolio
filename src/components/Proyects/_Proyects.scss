@@ -1,5 +1,5 @@
 .main-proyects-container {
-    @include containers;
+    background: #0D122A;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,21 +11,20 @@
     justify-content: space-between;
     align-items: center;
 }
-// .out {
-//     display: none;
-// }
+
 .proyects-cards-container {
     width: calc(386 *3);
-    height: 600px;
-    margin-top: 50px;
+    min-height: 600px;
+    margin: 50px;
 }
 
 .grid-card{
-    display: grid;
-    grid-template: {
-        columns: 386px 386px 386px;
-        rows:300px 300px;
-    }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 
