@@ -1,9 +1,7 @@
-import React from 'react';
-import { Link } from "react-scroll";
-import Button from '@material-ui/core/Button'
+import React from 'react'
+import { Link } from "react-scroll"
 import Fade from 'react-reveal/Fade'
 
-// #196CD7
 export const Home = () => {
 
     return (
@@ -27,20 +25,14 @@ export const Home = () => {
     
 
         <div className="home-button-container">  
-        <Fade bottom cascade>
+        <Fade bottom>
             <Link
             to="proyects-container"
             spy={true}
             smooth={true}
             offset={0}
             duration= {1200}
-            >  <Button
-            type="link"
-            variant="contained"
-            color="primary"
-            style={{margin: 0}}
-            > Explorar Proyectos <i className="fas fa-angle-right"></i> 
-            </Button> 
+            > <h4> Explorar Proyectos  </h4>
             </Link>
                     
             <Link
@@ -49,13 +41,7 @@ export const Home = () => {
                 smooth={true}
                 offset={0}
                 duration= {1200}
-            >  <Button
-            type="link"
-            variant="contained"
-            color="primary"
-            style={{marginLeft: '15px'}}
-            > Contactame <i className="fas fa-circle"></i> 
-            </Button>
+            >  <h4> Contactame  </h4> 
             </Link> 
         </Fade>    
             </div>

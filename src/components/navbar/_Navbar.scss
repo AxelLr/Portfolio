@@ -40,6 +40,7 @@ transition: 0.33s;
 cursor: pointer;
 i{
  transition: 0.33s;
+
 }
 }
 }
@@ -49,7 +50,6 @@ i{
         color: #759BC7;
         font-size: 40px;
         margin: 0;
-        transform: translateY(-75px)
     }
 }
 /************************************ SCROLL SPY ****************************/
@@ -172,8 +172,9 @@ transition: .4s;
 }
     
     .navbar-toggle{
-        display: block;
         background: transparent;
+        transform: translateY(-70px);
+        display: block;
         outline: none;
         border: none;
         cursor: pointer;
