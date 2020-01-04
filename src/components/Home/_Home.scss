@@ -20,9 +20,11 @@
     }
     
     .iconA {
+       
        opacity: 0;  
        animation: HomeIcons 1s ease 3s 1 normal forwards;
         i {
+       
          color: var(--white2);
          transition: .4s;
          font-size: 35px;
@@ -35,6 +37,7 @@
     }
     
     .iconB {
+     
         opacity: 0; 
         animation: HomeIcons 1s ease 2.5s 1 normal forwards;
         i {
