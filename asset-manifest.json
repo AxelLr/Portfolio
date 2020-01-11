@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.d54d226c.chunk.css",
+    "main.css": "/Portfolio/static/css/main.7ec25d4c.chunk.css",
     "main.js": "/Portfolio/static/js/main.f177ff19.chunk.js",
     "main.js.map": "/Portfolio/static/js/main.f177ff19.chunk.js.map",
-    "runtime-main.js": "/Portfolio/static/js/runtime-main.ac95d48e.js",
-    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.ac95d48e.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.200ee979.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.200ee979.js.map",
     "static/js/2.662d3b33.chunk.js": "/Portfolio/static/js/2.662d3b33.chunk.js",
     "static/js/2.662d3b33.chunk.js.map": "/Portfolio/static/js/2.662d3b33.chunk.js.map",
     "static/js/3.fee159bb.chunk.js": "/Portfolio/static/js/3.fee159bb.chunk.js",
     "static/js/3.fee159bb.chunk.js.map": "/Portfolio/static/js/3.fee159bb.chunk.js.map",
-    "static/js/4.69c5d6f1.chunk.js": "/Portfolio/static/js/4.69c5d6f1.chunk.js",
-    "static/js/4.69c5d6f1.chunk.js.map": "/Portfolio/static/js/4.69c5d6f1.chunk.js.map",
+    "static/js/4.d59bd9b9.chunk.js": "/Portfolio/static/js/4.d59bd9b9.chunk.js",
+    "static/js/4.d59bd9b9.chunk.js.map": "/Portfolio/static/js/4.d59bd9b9.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.44233c33fc16feecfa5a0ce8c41019c3.js": "/Portfolio/precache-manifest.44233c33fc16feecfa5a0ce8c41019c3.js",
+    "precache-manifest.5e367e0977c6729d6bc8cf20dac91c37.js": "/Portfolio/precache-manifest.5e367e0977c6729d6bc8cf20dac91c37.js",
     "service-worker.js": "/Portfolio/service-worker.js",
-    "static/css/main.d54d226c.chunk.css.map": "/Portfolio/static/css/main.d54d226c.chunk.css.map",
+    "static/css/main.7ec25d4c.chunk.css.map": "/Portfolio/static/css/main.7ec25d4c.chunk.css.map",
     "static/media/dolphapp.png": "/Portfolio/static/media/dolphapp.af80131e.png",
     "static/media/profilepic.jpg": "/Portfolio/static/media/profilepic.a4ddcfa4.jpg",
     "static/media/react-chat-2.png": "/Portfolio/static/media/react-chat-2.6f1c3955.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.ac95d48e.js",
+    "static/js/runtime-main.200ee979.js",
     "static/js/3.fee159bb.chunk.js",
-    "static/css/main.d54d226c.chunk.css",
+    "static/css/main.7ec25d4c.chunk.css",
     "static/js/main.f177ff19.chunk.js"
   ]
 }
