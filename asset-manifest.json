@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.ae82c6b6.chunk.css",
+    "main.css": "/Portfolio/static/css/main.c8fec5e6.chunk.css",
     "main.js": "/Portfolio/static/js/main.f177ff19.chunk.js",
     "main.js.map": "/Portfolio/static/js/main.f177ff19.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.ac95d48e.js",
@@ -12,9 +12,9 @@
     "static/js/4.69c5d6f1.chunk.js": "/Portfolio/static/js/4.69c5d6f1.chunk.js",
     "static/js/4.69c5d6f1.chunk.js.map": "/Portfolio/static/js/4.69c5d6f1.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.74a067c248074c00ba499509709bde65.js": "/Portfolio/precache-manifest.74a067c248074c00ba499509709bde65.js",
+    "precache-manifest.45dd2b133ed710fa55c779ee9ffebcb4.js": "/Portfolio/precache-manifest.45dd2b133ed710fa55c779ee9ffebcb4.js",
     "service-worker.js": "/Portfolio/service-worker.js",
-    "static/css/main.ae82c6b6.chunk.css.map": "/Portfolio/static/css/main.ae82c6b6.chunk.css.map",
+    "static/css/main.c8fec5e6.chunk.css.map": "/Portfolio/static/css/main.c8fec5e6.chunk.css.map",
     "static/media/dolphapp.png": "/Portfolio/static/media/dolphapp.af80131e.png",
     "static/media/profilepic.jpg": "/Portfolio/static/media/profilepic.a4ddcfa4.jpg",
     "static/media/react-chat-2.png": "/Portfolio/static/media/react-chat-2.6f1c3955.png"
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.ac95d48e.js",
     "static/js/3.fee159bb.chunk.js",
-    "static/css/main.ae82c6b6.chunk.css",
+    "static/css/main.c8fec5e6.chunk.css",
     "static/js/main.f177ff19.chunk.js"
   ]
 }
