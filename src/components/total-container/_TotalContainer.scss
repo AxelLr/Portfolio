@@ -1,43 +1,26 @@
 @mixin containers {
-    min-height: 100vh;
     max-height: 100vh;
     margin: 0;
 }
-
-.total_container {
-@include containers;
-}
-
 .home_container {
-@include containers;
-background: url(../../assets/icons/black-background16.jpg) no-repeat center center fixed;
+min-height: 630px;
+height: 100vh;
+background: #252934;
 background-size: cover;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
 }
-
-.about_container {
-// @include containers;
-// min-height: 200vh;
-// max-height: 200vh;
-background: #1a1c1c;
-}
-
 .proyects-container {
-background: red;
-
+background: var(--blue);
+box-sizing: border-box;
+overflow: hidden;
 }
-
 .contact-container {
 background: #2e4d70;
 margin: 0;
 }
-
 .footer-container {
 @include containers; 
-min-height: 15vh;
-max-height: 15vh;
-background: black;
+min-height: 210px;
+max-height: 210px;
+background: #1B242F;
 }
 

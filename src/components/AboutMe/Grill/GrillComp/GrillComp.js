@@ -5,7 +5,7 @@
 
     return (
   <Fade bottom>
-        <div className="grill-comp revealer">
+        <div className="grill-comp">
 
             <div> <i className={props.iconclass}>  </i> </div>
 

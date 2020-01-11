@@ -1,8 +1,9 @@
 .card-container {
 box-sizing: border-box;
-width: 386px;
-height: 300px;
+width: 400px;
+height: 400px;
 margin: 1px;
+
                                                       
     img {
         margin: 0px;
@@ -11,7 +12,7 @@ margin: 1px;
 }
 .card-text-container {
     margin: 0;
-    font-family: "Open Sans";
+    font-family: "Nunito";
     height: 100%;
     transform: translateY(-100%);  
     display: flex;
@@ -21,34 +22,58 @@ margin: 1px;
     transition: .6s;
     opacity: 0;
 
+    p {
+        transition: 1s;
+        opacity: 0;
+        color: #898A8C;
+        text-align: center;
+        width: 90%;
+    }
+
     h1 {
         visibility: hidden;
         opacity: 0;
-        font-family: "Montserrat";
+        font-family: "Nunito";
         color: var(--black2);
         transition: .6s;
         transform: translateY(-180px);
     }
 
     ul {
+        display: flex;
+        flex-wrap: nowrap;
         visibility: hidden;
         opacity: 0;
-        font-family: "Montserrat";
+        font-family: "Nunito";
         color: var(--black2);
         transition: .6s;
         text-decoration: none;
         list-style: none;
         transform: translateY(180px);
         padding: 0;
+        font-size: 20px;
 
         li{
             width: 100%;
-            margin-top: 5px;
+            margin: 5px;
+
+            a {
+                padding: 5px;
+                background: #FB1F79;
+                transition: .33s;
+                text-decoration: none;
+                color: white;
+            
+            }
         }
     }
         &:hover{
             opacity: 0.95;
-            background: var(--white2);
+            background: var(--white);
+
+            p {
+                opacity: 1;
+            }
 
             h1{
                 visibility: visible;

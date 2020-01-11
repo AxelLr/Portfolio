@@ -1,17 +1,9 @@
 .grill-container {
      display: flex;
      flex-wrap: wrap;
-     flex-direction: row;
      justify-content: space-around;
-     align-items: center;
-     margin-top: 35px;
-    
+     margin-top: 40px;
+     background: gold;
+     width: 100%;
+     min-height: 330px;
 }
-
-
-@media screen and (max-width: 800px) {
-     .grill-container {
-         margin: 45px 15px 0px 15px ;
-         background: green;  
-     }
-     }

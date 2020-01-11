@@ -30,20 +30,19 @@
     }
 }
 
-  /* The typing effect */ 
   @keyframes typing {
     from { width: 0 }
-    to { width: 240px}
+    to { width: 334px}
   }
   
-  /* The typewriter cursor effect */
+  // TYPE 
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: var(--white2) }
   }
 
  // animation: name duration timing-function delay iteration-count direction fill-mode;
-
+ 
  /********************************* NAVBAR KEYFRAMES ************************************/
 
 @keyframes menu-opacity {
@@ -88,4 +87,13 @@
 @keyframes CardTextInBot {
   to { opacity: 1;
     transform:  translateY(-100px);}
+}
+
+@media screen and (max-width: 618px) {
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 198px}
+}
+
 }

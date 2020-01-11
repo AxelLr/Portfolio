@@ -1,17 +1,11 @@
-// #596060
 .main-about-container {
-    // @include containers;
-    // min-height: 185vh;
-    // max-height: 185vh;
-    background: #0D122A;
+    background: var(--darkblue);
     font-family: "Nunito";
     display: flex;
     flex-direction: column;
 }
-
 .about-body{
-    margin: 0;
-    background: var(--grey);
+    margin: 40px 0px 0px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,52 +13,56 @@
     width: 100%;
 }
 .about-body-picture {
-    border-radius: 20px;
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 90%;
-    margin: 20px auto auto auto;
-    
+    margin: 20px auto auto auto;  
 }
 .profile-image-container {
 margin: 0px 50px 0px 50px;
+
+    img {
+        width: 370px;
+        height: 370px;
+    }
  
 }
 .profile-paragraph-container {
 width: 35%;
 
     p{
-    color: var(--white2);
-    font-size: 15px;
-    font-family: "Montserrat";
+    color: #979797;
+    font-size: 18px;
+    font-family: "Nunito";
     text-align: justify;
     }
     
     h3{
-        color: var(--white2);
+        color:  var(--white);
 
         span {
-            color: #4F6B79;
+            color: var(--blue);
         }
     }
    
 }
 .about-body-skills{
+    border-radius: 3px;
+    margin: 40px 0px 10px 0px;
     display: flex;
     flex-direction: column;
     align-items: flex;
     justify-content: flex-end;
     width: 100%;
-    background: #2E4D70;
-    margin-top: 65px;
+    background: var(--blue);
 
     h1{
-        margin: 5px;
-        width: 100%;
-       text-align: center;
+    margin: 5px;
+    width: 100%;
+    text-align: center;
     }
     }
     
@@ -74,58 +72,106 @@ width: 35%;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 40px;
+    margin: 60px 0px;
 
-    .front-skills {
+    .list-skills {     
+        
         display: flex;
         flex-direction: column;  
-        width: 30%;
-        align-items: center;
-        h2 {
-            font-size: 15px;
-            text-align-last:  center;
-            width: 100%;
-            margin-top: 5px;
-            color: var(--black2);
-            background: var(--white2);
-        }
-    }
-
-    .back-skills {
-        display: flex;
-        flex-direction: column; 
-        width: 30%;
-        align-items: center;
-
-        h2 {
-            font-size: 15px;
-            width: 100%;
-            text-align: center;
-            background: black;
-            margin-top: 5px;
-            color: var(--white2);
-        }
-    }
-}
-
-@media screen and (max-width: 1050px) {
-
-    .about-body-picture{
-        flex-direction: row;
+        width: 40%;
         align-items: center;
         justify-content: center;
-    }
 
-    .profile-paragraph-container{
-        width: 100%;
+        h1 {
+            background: #759bc7;
+            margin-bottom: 40px;
+            color: var(--white);
+            width: 50%;
+            border-radius: 3px;
+        }
+
+        h2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            width: 90%;
+            margin-top: 5px;
+            color: var(--white);
+            height: 35px;
+            background:#294565;
+
+            &:hover {
+                p {
+                    width: 100%;
+                }   
+            }
+
+            p {
+                transition: .33s;
+                height: 100%;
+                margin: 0;
+                background: #20364F;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                width: 35%;
+
+                span {
+                    background: transparent;
+                    margin: 0;
+                    width: 100%;
+                    transition: .33s;
+                    font-size: 15px;
+                    text-align: center;
+                }
+            }
+        }
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 760px) {
+
+    .skills {
+        .list-skills {  
+            h1 {
+                width: 80%;
+            }   
+            h2 {
+                p {
+                    width: 55%;
+                    span {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1170px) {
+
+.profile-image-container {
+ margin: 0px 50px 0px 50px;   
+    img {
+         width: 300px;
+    }       
+}
+     
 .about-body-skills {
     margin-top: 35px;
 }
+
 .profile-image-container {
     margin: 20px;
 }
+.about-body-picture{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
+
+.profile-paragraph-container{
+    width: 100%;
+}
+}
+

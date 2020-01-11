@@ -1,25 +1,44 @@
 .main-footer-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
-    background: black;
+    background: #1B242F;
 }
 
 .arrow-footer-container {
     height: 40px;
 
     i{  
-        transform: translateY(-25px);
+        transform: translateY(-20px);
         border-radius: 50%;
         padding: 12px;
         background: #046b87;
-        font-size: 30px;
-        color: var(--white2);
+        font-size: 20px;
+        color: var(--white);
         transition: 0.4s;
         &:hover {
             cursor: pointer;
         }
+    }
+}
+
+.contacticons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+        i{  
+            border-radius: 3px; 
+            margin: 10px;
+            font-size: 50px;
+            color: white;
+            transition: .33s;
+
+            &:hover{
+                color: #FB1F79;
+            }
     }
 }
 
@@ -37,11 +56,47 @@
         font-family: "Lato";
         font-weight: 300;
         color: #747474 ;
+    }
+}
 
-        span{
+.phone-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    h3{
+        display: flex;
+        align-items: center;
+        justify-content: space-evebnly;
+        flex-wrap: nowrap;
+        width: 210px;
+        margin-left: 30px;
+
+        i {
+            margin: 0;
+            font-size: 25px;
             color: white;
-            opacity: 1;
+            margin-right: 15px;
+        }
+
+        span {
+            font-family: "Nunito";
+            color:  var(--white);
         }
     }
-   
+}
+
+@media screen and (max-width: 535px) { 
+
+    .phone-number {
+    
+        h3 {
+            margin-top: 15px;
+            margin-bottom: 10px;
+            width: 240px;
+            justify-content: space-between;
+        }
+    }
+
 }

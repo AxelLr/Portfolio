@@ -13,8 +13,8 @@ export const AboutMe = () => {
             <div className="about-title"> 
       
             <SeccionTitle title="SOBRE MI"
-                          margin="8vh"
-                          textcolor="var(--white2)"
+                          margin="10vh"
+                          textcolor="var(--white)"
                           iconClass="fas fa-user"
                           />
             </div>
@@ -24,7 +24,7 @@ export const AboutMe = () => {
                 <div className="about-body-picture">
 
                      <div className="profile-image-container"> 
-                        <img src={profilePic} alt="foto-perfil"  width="270px" height="300px"/> 
+                        <img src={profilePic} alt="foto-perfil" /> 
                      </div>
                 <Zoom bottom >
                     <div className="profile-paragraph-container"> 
@@ -46,29 +46,42 @@ export const AboutMe = () => {
                     </div>
                 </Zoom>    
                 </div>
+
+                
+            <Grill backcolor= "transparent"
+                   paragraph1= "Tiempos de carga rápidos e interacción libre de lag. Siempre pensando en el costo computacional."
+                   paragraph2= "Diseños que funcionen en cualquier dispositivo,  grande o pequeño."
+                   paragraph3= "Preferencia por diseños intuitivos y dinámicos, considerando siempre al usuario final. "
+            /> 
                 
                 <div className="about-body-skills">
 
-                    <SeccionTitle title="HABILIDADES" textcolor="var(--white2)" />
+                    <SeccionTitle title="HABILIDADES" margin='5vh' textcolor="var(--white)" />
 
                     <div className="skills">
                 
-                        <div className="front-skills">  
-                            <h2> HTML        </h2>
-                            <h2> CSS         </h2>
-                            <h2> JavaScript  </h2>
-                            <h2> SASS        </h2>
-                            <h2> ReactJS     </h2>
-                            <h2> Redux       </h2>    
+                        <div className="list-skills">
+                            <h1> Front-End   </h1>
+
+                            <h2> <p> <span> HTML        </span> </p> </h2>
+                            <h2>  <p> <span> CSS         </span> </p> </h2>
+                            <h2>  <p> <span> JavaScript  </span>  </p> </h2>
+                            <h2> <p> <span> SASS        </span>  </p> </h2>
+                            <h2><p> <span> ReactJS     </span> </p>   </h2>
+                            <h2> <p>  <span> Redux       </span> </p> </h2>
+
                         </div> 
 
-                        <div className="back-skills">  
-                            <h2> Node.js      </h2>
-                            <h2> Express     </h2>
-                            <h2> GraphQL     </h2>
-                            <h2> Firebase    </h2>
-                            <h2> MySQL       </h2>
-                            <h2> MongoDB     </h2>
+                        <div className="list-skills">  
+                            <h1> Back-End   </h1>  
+
+                            <h2> <p> <span> Node        </span> </p> </h2>
+                            <h2>  <p> <span> Express         </span> </p> </h2>
+                            <h2>  <p> <span> WebSockets  </span>  </p> </h2>
+                            <h2> <p> <span> Firebase        </span>  </p> </h2>
+                            <h2><p> <span> SQL     </span> </p>   </h2>
+                            <h2> <p>  <span> MongoDB       </span> </p> </h2>
+                          
                         </div> 
               
                     </div>    
@@ -76,12 +89,6 @@ export const AboutMe = () => {
                 </div> 
                     
             </div>
-
-            <Grill backcolor= "transparent"
-                   paragraph1= "Tiempos de carga rápidos e interacción libre de lag. Siempre pensando en el costo computacional."
-                   paragraph2= "Diseños que funcionen en cualquier dispositivo,  grande o pequeño."
-                   paragraph3= "Preferencia por diseños intuitivos y dinámicos, considerando siempre al usuario final. "
-            /> 
             
         </div>
     )

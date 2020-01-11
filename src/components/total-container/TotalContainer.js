@@ -30,7 +30,8 @@ const TotalContainer = () => {
     <section className="proyects-container " id="proyects-container">
     
 
-        < Proyects />    
+        < Proyects />
+        <div className="triangle">  </div>   
         
     </section>
 

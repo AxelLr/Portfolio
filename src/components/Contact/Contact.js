@@ -7,8 +7,6 @@ import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
 import CircularProgress from '@material-ui/core/CircularProgress'
 
-import Fade from 'react-reveal/Fade'
-
 export function Contact(props) {
 
 const initialState = {
@@ -66,8 +64,8 @@ const onExpire = () => {
       <div className="main-contact-container">
 
           <div className="form-container">
-          <SeccionTitle title="Envíame un mensaje" margin= "4vh" textcolor="var(--white2)"/>
-          <Fade bottom>
+          <SeccionTitle title="Envíame un mensaje" textcolor="var(--white)"/>
+          
                 <form onSubmit={handleSubmit}>
 
                     <TextField
@@ -151,36 +149,23 @@ const onExpire = () => {
                     >
                     Enviar Mensaje! {loading && < CircularProgress />} { sended && <i className=" ready fas fa-check"></i>}
                     </Button>
+             
+                </form>
 
+                <div className='captcha'>
                     <Recaptcha 
-                    sitekey='6LfUL8wUAAAAAG5euaaRaYy0imP495t0bZ232RMY' 
+                    sitekey='6Le-M8wUAAAAAPo3fvfxpWl0sQxg51HBS5QNcyzr' 
                     render='explicit'
                     verifyCallback={Verify}
                     onExpired={onExpire}
+                    style={{width: 30}}
+                    compact 
                     />
-                </form>
-            </Fade>
+                  </div> 
+           
           </div>
 
-              <div className="info-contact-container"> 
-     
-                  <h3> Si necesitas ayuda en algún proyecto, no dudes en ponerte en contacto conmigo. </h3>
-
-                  <div className="phone-number">
-                      
-                      <h3>  <i className="fas fa-phone-alt"></i> (+54) 2664871368 </h3>  
-                      
-                      <h3>  <i className="fas fa-envelope"></i> axelleonr12@gmail.com </h3>                 
-                  </div>
-           
-                  <div className="contacticons-container"> 
-
-                    <a href="https://www.linkedin.com/in/axelleonr/"> <i className="fab fa-linkedin"></i>        </a>
-                    <a href="https://github.com/AxelLr"> <i className="fab fa-github"></i>          </a>
-                    <a href="https://www.facebook.com/axel.leon.52"> <i className="fab fa-facebook-square"></i> </a>
-  
-                  </div>
-              </div>
+        
       </div>
     );
 }

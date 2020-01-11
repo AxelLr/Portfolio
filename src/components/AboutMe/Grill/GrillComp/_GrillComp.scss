@@ -1,30 +1,29 @@
 .grill-comp {
     margin: 0;
     width: 400px;
-    height: 46vh;
+    height: 330px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: var(--blue);
+    color: var(--lightblue);
 
     div {
             i{
-               font-size: 5em;
+               font-size: 7em;
             }
     }
     h1{
-        font-family: "Montserrat";
+        font-family: "Nunito";
     }
     p{
         text-align: center;
+        width: 90%;
     }
 }
 
-@media screen and (max-width: 800px) {
-    .grill-comp {
-       height: 40vh;
-       margin-top: 30px;
-    }
+@media screen and (min-width: 817px) and (max-width: 1199px) {
 
-    }
+    
+    
+}

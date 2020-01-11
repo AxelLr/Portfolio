@@ -4,6 +4,7 @@
 .navbar_container {
 right: 0;
 width: 80px;
+min-height: 350px;
 height: 100vh;
 position: fixed;
 z-index: 1;
@@ -29,7 +30,7 @@ flex-direction: row;
 justify-content: center;
 &:hover i {
 font-size: 16px;
-color: #759BC7;
+color: #759bc7;
 }
 } 
 a{
@@ -47,7 +48,7 @@ i{
 }
 .navbar-toggle {
     i{
-        color: #759BC7;
+        color: #759bc7;
         font-size: 40px;
         margin: 0;
     }
@@ -56,7 +57,7 @@ i{
 .home-link {
     a{
         i{
-            color: var(--white2);
+            color: var(--white);
             font-size: 10px;
         }
     }
@@ -72,7 +73,7 @@ i{
 .aboutme-link {
     a{
         i{
-            color: var(--white2);
+            color: var(--white);
             font-size:10px;
         }
     }
@@ -89,7 +90,7 @@ i{
 .proyects-link {
     a{
         i{
-            color: var(--white2);
+            color: var(--white);
             font-size: 10px;
         }
     }
@@ -105,7 +106,7 @@ i{
    .contact-link {
     a{
         i{
-            color: var(--white2);
+            color: var(--white);
             font-size: 10px;
         }
     }
@@ -147,7 +148,7 @@ opacity: 0;
 }
 .yes-navbar{
 opacity: 1;
-transition: 4s;
+transition: 2s;
 visibility: visible;
 }
 
@@ -155,7 +156,7 @@ visibility: visible;
 .spy-on {
     .ibn{
         font-size: 16px;
-        color: #759BC7;  
+        color: #759bc7;  
     }
 }
 

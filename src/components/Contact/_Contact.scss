@@ -2,65 +2,29 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 90%;
-    margin: auto;
-}
-.info-contact-container {
-    display: flex;
-    flex-direction: column;
+    min-height: 650px;
     align-items: center;
-    justify-content: space-around;
-    margin: 0px 0px 60px 0px;
-    height: 35vh;
-    h3{
-        text-align: center;
-        color: var(--white2);
-        font-family: "Nunito";
-    }
 }
+.form-container {
+    margin: 40px auto 0px auto;
+    width: 85%;
 
-.phone-number {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    h3{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 250px;
-        margin: 10px;
+    form {
+        margin: 40px 0px 0px 0px ;
     }
-
-    i {
-        margin: 0;
-        font-size: 18px;
-        color: var(--white2);
-        margin-right: 15px;
-    }
-}
-
-.contacticons-container {
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-        i{  
-            margin: 10px;
-            font-size: 50px;
-            color: white;
-    }
-
 }
 
 .ready {
     color: #06A3CE;
     margin-left: 15px;
     font-size: 25px;
+}
+.captcha {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    height: 200px;
 }
 
 @media screen and (max-width: 418px) {
