@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eb3fcbff9e550180638613e2ff2e271b",
+    "revision": "39daf09a412083ebfe3699b3befdbf98",
     "url": "/Portfolio/index.html"
   },
   {
-    "revision": "0f44d35f61cf4724849f",
-    "url": "/Portfolio/static/css/main.ca543728.chunk.css"
+    "revision": "28f2c6ea48d654ee234d",
+    "url": "/Portfolio/static/css/main.21f85d5b.chunk.css"
   },
   {
-    "revision": "1d0d13897b86072d54d5",
-    "url": "/Portfolio/static/js/2.ac849715.chunk.js"
+    "revision": "8a5273c90cdb066399d7",
+    "url": "/Portfolio/static/js/2.ef180674.chunk.js"
   },
   {
-    "revision": "b951b0331874fdb963a1",
-    "url": "/Portfolio/static/js/3.aeaf7153.chunk.js"
+    "revision": "84cb480bb0f5aa3bc019",
+    "url": "/Portfolio/static/js/3.8f0e1921.chunk.js"
   },
   {
-    "revision": "1d6bd1e418b122dbb494",
-    "url": "/Portfolio/static/js/4.6cb62b5b.chunk.js"
+    "revision": "71b2acb970e6429c26b8",
+    "url": "/Portfolio/static/js/4.07ba69f8.chunk.js"
   },
   {
-    "revision": "0f44d35f61cf4724849f",
-    "url": "/Portfolio/static/js/main.b6de3f92.chunk.js"
+    "revision": "28f2c6ea48d654ee234d",
+    "url": "/Portfolio/static/js/main.66789207.chunk.js"
   },
   {
-    "revision": "88bf995138ef8ca56154",
-    "url": "/Portfolio/static/js/runtime-main.776eee2d.js"
+    "revision": "e96caf04324fb0d93b39",
+    "url": "/Portfolio/static/js/runtime-main.db439946.js"
+  },
+  {
+    "revision": "147260d11839e30cfccff95af46078e5",
+    "url": "/Portfolio/static/media/CV_Axel_León.147260d1.pdf"
   },
   {
     "revision": "29e95a4de1c54028cf4ca6d53c7faa7c",
