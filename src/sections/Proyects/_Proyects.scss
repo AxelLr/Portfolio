@@ -1,0 +1,121 @@
+.proyects-container {
+    background: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.proyects-cards-container {
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    span {
+        cursor: pointer;
+        font-family:  'Nunito';
+        border-radius: 100%;
+        background-color: white;
+        box-shadow:  12px 12px 24px #01797d, 
+        -12px -12px 24px #01a1a9;
+        padding: 10px;
+
+        i {
+            font-size: 30px;
+        }
+     
+    }
+}
+
+.github-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    text-decoration: none;
+     
+    p {
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 30px;
+        font-family: 'Nunito';
+        margin-right: 15px;
+        color: var(--white);
+        height: 40px;
+        transition: .3s;
+
+        &:hover {
+            border-bottom: 1px solid var(--white);
+        }
+    }
+
+    span {
+        i {
+            color: black;
+        }
+    }
+}
+
+.cards-layout{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  
+          i {
+            margin-top: 50px;
+            align-self: flex-start;
+            justify-self: flex-start;
+            font-size: 35px;
+            box-shadow:  5px 5px 9px #c2c2c2, 
+            -5px -5px 9px #ffffff;
+        }
+
+        span {
+            font-family: 'Nunito';
+        }
+}
+
+.triangle {
+    transform: translateX(-5px);
+    box-sizing: border-box;
+    margin: auto;
+    height: 0;
+    border-top: 90px solid var(--white);
+    border-left: 49vw solid transparent; 
+    border-right: 49vw  solid transparent; 
+}
+
+@media screen and (max-width: 618px) {
+
+    .triangle {
+        transform: translateX(-5px);
+        box-sizing: border-box;
+        margin: auto;
+        height: 0;
+        border-top: 40px solid var(--white);
+        border-left: 49vw solid transparent; 
+        border-right: 49vw  solid transparent; 
+    }
+
+    .main-proyects-container {
+        min-height: 1300px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .proyects-cards-container {
+        padding: 0;
+    }
+
+    .github-link {
+        p{
+            font-size: 25px;
+        }
+    }
+}
+
+
+

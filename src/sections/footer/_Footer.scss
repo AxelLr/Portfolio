@@ -1,0 +1,110 @@
+.main-footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background: #1B242F;
+}
+
+.arrow-footer-container {
+    height: 40px;
+
+    i{  
+        transform: translateY(-20px);
+        border-radius: 50%;
+        padding: 12px;
+        background: #046b87;
+        font-size: 20px;
+        color: var(--white);
+        transition: 0.4s;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.contact-icons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    
+    a{
+        border-radius: 50px;
+        background: #1C2530;
+        box-shadow:  7px 7px 14px #0d1217, 
+                     -7px -7px 14px #2b3849;
+        padding: 10px;
+        margin-left: 10px;
+    }
+        i{  
+            border-radius: 3px; 
+            margin: 10px;
+            font-size: 50px;
+            color: white;
+            transition: .33s;
+
+            &:hover{
+                color: #FB1F79;
+            }
+    }
+}
+
+.footer-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px ;
+
+    h1{
+        margin: 2px;
+        font-size: 15px;
+        font-family: "Lato";
+        font-weight: 300;
+        color: #747474 ;
+    }
+}
+
+.phone-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    h3{
+        display: flex;
+        align-items: center;
+        justify-content: space-evebnly;
+        flex-wrap: nowrap;
+        width: 210px;
+        margin-left: 30px;
+
+        i {
+            margin: 0;
+            font-size: 25px;
+            color: white;
+            margin-right: 15px;
+        }
+
+        span {
+            font-family: "Nunito";
+            color:  var(--white);
+        }
+    }
+}
+
+@media screen and (max-width: 535px) { 
+
+    .phone-number {
+    
+        h3 {
+            margin-top: 15px;
+            margin-bottom: 10px;
+            width: 240px;
+            justify-content: space-between;
+        }
+    }
+
+}

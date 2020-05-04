@@ -1,0 +1,120 @@
+.aboutMe-container {
+    font-family: "Nunito";
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    height: 100%;
+    padding: 0;
+}
+.aboutMe-body{
+    background: #01a1a7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px auto;
+}
+.aboutMe-profile-info {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    padding-top: 40px;
+}
+.profile-image-container {
+    margin-right: 50px;
+    border-radius: 50px;
+    background: #01a1a7;
+    box-shadow:  12px 12px 24px #01797d, 
+    -12px -12px 24px #01c9d1;
+
+    img {
+        object-fit: cover;
+        border-radius: 50px;
+        display: block;
+        width: 370px;
+        height: 370px;
+    }
+}
+.profile-paragraph-container {
+    width: 40%;
+
+    p{
+        text-align: justify;
+        text-indent: 10px;
+        color: var(--white);
+        font-size: 1.4em;
+        font-family: "Nunito";
+        margin: 0px 0px 50px 0px;
+        padding: 0;
+    }
+    
+    h3{
+        display: flex;
+        align-items: center;
+        color:  var(--white);
+    }
+
+    a{
+        color: var(--white);
+        border-radius: 50px;
+        background: #01a1a7;
+        box-shadow:  12px 12px 24px #01797d, 
+        -12px -12px 24px #01a1a9;
+        padding: 20px;
+        width: 150px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: .5s;
+        text-decoration: none;
+
+        &:hover {
+           
+            background: #01a1a7;
+            box-shadow: inset 12px 12px 24px #01797d, 
+                        inset -12px -12px 24px #01c9d1;
+        }
+    }
+}
+.aboutMe-cards-container {
+    padding-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.aboutMe-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+@media screen and (max-width: 1170px) {
+
+    .profile-image-container {
+    margin: 0px 50px 0px 50px;   
+        img {
+            width: 300px;
+        }       
+    }
+    .profile-image-container {
+        margin: 20px;
+    }
+    .profile-paragraph-container{
+        padding: 0px 20px;
+        width: 100%;
+    }
+}
+
+@media screen and(max-width: 330px) {
+    .profile-paragraph-container {
+        
+        p {
+            font-size: 1.25em;
+        }
+    }
+}
+

@@ -1,0 +1,180 @@
+.navbar-container {
+    visibility: hidden;
+height: 100vh;
+width: 90px;
+position: fixed;
+z-index: 1;
+margin: 0;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+padding: 15px;
+ ul {
+     
+    li {
+        padding: 20px 0px;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        i {
+            font-size: 15px;
+            color: var(--gray);
+        }
+    } 
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+ }
+}
+.navbar-toggle {
+    justify-self: flex-start;
+    display: flex;
+    border-radius: 100%;
+    background-color: var(--white);
+    box-shadow:  0px 0px 2px , 
+                 0px 0px 2px;
+    height: 50px;
+    width: 50px;
+    transition: .3s;
+
+    i {
+        transition: .3s;
+        margin: auto;
+    }
+}
+.rotate-navbar-toggle {
+    transform: rotate(180deg);
+    transition: .3s;
+}
+
+.visible-navbar {
+    overflow: hidden;
+    height: 250px;
+    transition: height 1s; 
+    margin: auto;
+    background-color: var(--white);
+    box-shadow:  0px 0px 2px , 
+                 0px 0px 2px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column; 
+    padding: 10px;
+}
+
+.close-navbar {
+    height: 0px;
+    visibility: hidden;
+    overflow: hidden;
+    transition: height .3s, visibility .22s; 
+    margin: auto;
+    background-color: var(--white);
+    box-shadow:  0px 0px 2px , 
+                 0px 0px 2px;
+    border-radius: 50px;
+    display: flex;
+    visibility: hidden;
+    flex-direction: column; 
+    padding: 10px;
+}
+
+/**************************** SCROLL SHOW CLASSES **************************/  
+.hide-navbar {
+transition: 0.4s;
+background: transparent;
+visibility: hidden;  
+opacity: 0;
+}
+.show-navbar{
+opacity: 1;
+transition: 0.4s;
+visibility: visible;
+}
+
+/**************************** SCROLL SPY CLASSES **************************/ 
+.spy-on {
+    .ibn{
+        font-size: 16px;
+        color: var(--blue);  
+    }
+}
+
+@media screen and (min-width: 700px) {
+    /************************************ SCROLL SPY ****************************/
+.home-link {
+    a{
+        i{
+            color: var(--white);
+            font-size: 10px;
+        }
+    }
+    &:hover {
+        a{
+            i::before{
+                content: 'Home';
+                font-family: 'Nunito';
+            }
+        }
+    }
+   }
+.aboutme-link {
+    a{
+        i{
+            color: var(--white);
+            font-size:10px;
+        }
+    }
+ &:hover {
+     a{
+         i::before{
+             content: 'Sobre Mi';
+             font-family: 'Nunito';
+             white-space: nowrap;
+         }
+     }
+ }
+}
+.proyects-link {
+    a{
+        i{
+            color: var(--white);
+            font-size: 10px;
+        }
+    }
+    &:hover {
+        a{
+            i::before{
+                content: 'Proyectos';
+                font-family: 'Nunito';
+            }
+        }
+    }
+}
+   .contact-link {
+    a{
+        i{
+            color: var(--white);
+            font-size: 10px;
+        }
+    }
+    &:hover {
+        a{
+            i::before{
+                content: 'Contacto';
+                font-family: 'Nunito';
+            }
+        }
+    }
+}
+
+.navbar-container {
+    ul{
+        &:hover {
+            width: 80px;
+        }
+    }
+}
+
+}

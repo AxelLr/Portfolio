@@ -1,21 +1,21 @@
-@import './components/total-container/TotalContainer';
-@import './components/navbar/Navbar';
-@import './components/Home/Home';
-@import './components/AboutMe/Aboutme';
+@import './sections/navbar/Navbar';
+@import './sections/Home/Home';
+@import './sections/AboutMe/Aboutme';
 @import './components/SeccionTitle/SeccionTitle';
-@import './components/Proyects/Proyects';
-@import './components/Proyects/ProyectCard/Proyectcard';
-@import './components/Contact/Contact';
-@import './components/Keyframes';
-@import './components/AboutMe/Grill/grill';
-@import './components/AboutMe/Grill/GrillComp/GrillComp';
-@import './components/footer/Footer';
-
-
+@import './sections/Proyects/Proyects';
+@import './sections/Proyects/ProyectCard/Proyectcard';
+@import './sections/Contact/Contact';
+@import './Keyframes';
+@import './sections/AboutMe/components/card/Card';
+@import './sections/footer/Footer';
+@import './sections/AboutMe/components/skills/Skills';
+@import './components/loading/Loading';
 * {
     box-sizing: border-box;
     --lightblue: #759AC6;
-    --blue: #2E4D70;
+    --blue: #01A1A7;
+    --blue2: #3F70F5;
+    --blueText: #5A7793;
     --darkblue: #0D122A;
     --lightred: #E31C6E;
     --red: #B00002;
@@ -31,7 +31,7 @@ html {
     height: 100%;
 }
 body {
-background: black;
+background: var(--white);
 min-height: -webkit-fill-available;
 margin: 0;  
 padding: 0;
@@ -43,9 +43,7 @@ padding: 0;
 background: #0D122A;
 height: 100vh;
 display: flex;
-
     span {
         margin: auto;
     }
-
 }

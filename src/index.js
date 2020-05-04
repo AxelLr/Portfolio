@@ -1,17 +1,15 @@
-import React,{lazy, Suspense} from 'react';
-import ReactDOM from 'react-dom';
-import './index.scss';
-import * as serviceWorker from './serviceWorker';
-import CircularProgress from '@material-ui/core/CircularProgress';
-const TotalContainer = lazy(() => import('./components/total-container/TotalContainer'))
+import React,{ lazy, Suspense } from 'react'
+import ReactDOM from 'react-dom'
+import './index.scss'
+import * as serviceWorker from './serviceWorker'
+import Loading from './components/loading/Loading'
+const TotalContainer = lazy(() => import('./App'))
 
 ReactDOM.render(
-<Suspense fallback={
+<Suspense fallback={<Loading />} >
 
-    <div className='lazy-loading'> 
-        <span> <CircularProgress style={{margin: 'auto'}} size={200} /> </span> 
-    </div>}> < TotalContainer />
+    < TotalContainer />
 
-</Suspense>, document.getElementById('root'));
+</Suspense>, document.getElementById('root'))
 
-serviceWorker.unregister();
+serviceWorker.unregister()
