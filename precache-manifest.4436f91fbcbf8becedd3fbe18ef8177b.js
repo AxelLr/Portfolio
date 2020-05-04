@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "633c5ecc8d693a520622328109d43a06",
+    "revision": "c8a847010434cd32ac4f9d5754488518",
     "url": "/Portfolio/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/js/2.ef180674.chunk.js"
   },
   {
-    "revision": "89346b2bed93c686ba86",
-    "url": "/Portfolio/static/js/3.ba674241.chunk.js"
+    "revision": "c12509711503cb8502fe",
+    "url": "/Portfolio/static/js/3.04e6f89b.chunk.js"
   },
   {
     "revision": "71b2acb970e6429c26b8",
@@ -24,12 +24,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/js/main.66789207.chunk.js"
   },
   {
-    "revision": "6ccf7820bd61e5709061",
-    "url": "/Portfolio/static/js/runtime-main.29c66a68.js"
+    "revision": "027aa069869ded5cde32",
+    "url": "/Portfolio/static/js/runtime-main.4e44cee8.js"
   },
   {
-    "revision": "7d6d4f4a5560d8683216cc64bb396085",
-    "url": "/Portfolio/static/media/CV_Axel_León.7d6d4f4a.pdf"
+    "revision": "147260d11839e30cfccff95af46078e5",
+    "url": "/Portfolio/static/media/CV_Axel_León.147260d1.pdf"
   },
   {
     "revision": "29e95a4de1c54028cf4ca6d53c7faa7c",
